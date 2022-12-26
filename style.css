@@ -106,16 +106,16 @@ body {
   width: 100%;
 }
 
-.name {
+.self .name {
   padding-top: 15px;
   display: flex;
 }
-.name > .img > img {
+.self .name > .img > img {
   height: 80px;
   border-radius: 50%;
 }
 
-.name > .text {
+.self .name > .text {
   display: grid;
   grid-template: 1fr 2fr / 1fr;
   font-weight: bold;
@@ -155,7 +155,7 @@ body {
 
 .content { 
   display: grid;
-  grid-template: 1fr 1fr / 3fr 1fr;
+  grid-template: 0.7fr 1fr / 3fr 1fr;
   padding: 20px;
 }
 
@@ -209,4 +209,65 @@ body {
 
 .buttons > .mdi {
   font-size: 20px;
+}
+.announcements {
+  display: flex;
+  flex-direction: column;
+}
+.announcements > .container, .trending > .container {
+  background-color: rgb(249, 249, 249);
+  height: auto;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(135, 135, 135, 0.35) 0px 5px 15px;  
+}
+
+.announcements .announcement {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.announcements .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.line {
+  width: 80%;
+  background-color: rgb(207, 207, 207);
+  height: 1px;
+  align-self: center;
+}
+
+.trending img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.trending .user {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-left: 15px;
+}
+
+.info .name {
+  font-weight: bold;
+}
+
+.info .desc {
+  margin-top: 2px;
+  color: rgb(87, 87, 87);
 }
