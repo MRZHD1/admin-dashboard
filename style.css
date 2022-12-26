@@ -9,7 +9,7 @@ html, body, html * {
 }
 body {
   display: grid;
-  grid-template: 1fr 4fr / 1fr 4fr
+  grid-template: 1fr 4fr / 1fr 5fr
 }
 
 .sidebar, .navbar {
@@ -22,6 +22,7 @@ body {
   grid-row-end: 3;
   color: white;
   padding-left: 20px;
+  font-weight: 500;
 }
 
 .sidebar > .logo {
@@ -43,13 +44,16 @@ body {
   padding-right: 20px;
 }
 .navbar {
+  position: relative;
   display: grid;
   grid-template: 1fr 2fr;
   padding-left: 50px;
+  box-shadow: rgba(192, 192, 192, 0.35) 0px 5px 15px;  
+  padding-bottom: 10px;
 }
-.top {
+.navbar > .top {
   display: grid;
-  grid-template: 1fr / 3fr 2fr
+  grid-template: 1fr 2fr / 3fr 2fr
 }
 .search {
   display: flex;
@@ -64,6 +68,7 @@ body {
   display: flex;
   padding-left: 25%;
   justify-content: flex-end;
+  height: 50px;
 }
 .icon{
   font-size: 27px;
@@ -72,7 +77,7 @@ body {
 }
 
 .input {
-  width: 100%;
+  width: 87%;
   height: 80%;
   background-color: rgb(211, 218, 225);
   border-radius: 20px;
@@ -90,5 +95,60 @@ body {
   font-weight: bold;
   padding-top: 8.5px;
   padding-left: 15px;
-  padding-right: 25px;
+  padding-right: 70px;
+}
+
+.top > .self {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.name {
+  padding-top: 15px;
+  display: flex;
+}
+.name > .img > img {
+  height: 80px;
+  border-radius: 50%;
+}
+
+.name > .text {
+  display: grid;
+  grid-template: 1fr 2fr / 1fr;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
+.text > .bottom {
+  font-size: x-large;
+}
+
+.buttons {
+  justify-content: flex-end;
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-between;
+  width: 40%;
+  margin-right: 50px;
+}
+
+.buttons > * {
+  height: 50px;
+  background-color: rgba(24,146,211,255);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 100px;
+  color: white;
+}
+
+.content {
+  background-color: rgb(235, 237, 244)
 }
