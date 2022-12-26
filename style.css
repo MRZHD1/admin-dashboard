@@ -127,7 +127,7 @@ body {
   font-size: x-large;
 }
 
-.buttons {
+.self > .buttons {
   justify-content: flex-end;
   display: flex;
   padding-top: 30px;
@@ -136,7 +136,7 @@ body {
   margin-right: 50px;
 }
 
-.buttons > * {
+.self > .buttons > * {
   height: 50px;
   background-color: rgba(24,146,211,255);
   margin: 10px;
@@ -151,4 +151,62 @@ body {
 
 .content {
   background-color: rgb(235, 237, 244)
+}
+
+.content { 
+  display: grid;
+  grid-template: 1fr 1fr / 3fr 1fr;
+  padding: 20px;
+}
+
+.content > .projects {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.content > * > .text {
+  font-weight: bold;
+  font-size: large;
+}
+
+.content > .projects > .container {
+  display: grid;
+  height: 95%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.projects > .container > .project {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border-left: 7px solid;
+  border-color: orange;
+  box-shadow: rgba(126, 126, 126, 0.35) 0px 5px 15px; 
+}
+
+.container > .project > .text{ 
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.project > .text > .title {
+  font-weight: bold;
+}
+
+.project > .buttons {
+  display: flex;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.buttons > .mdi {
+  font-size: 20px;
 }
