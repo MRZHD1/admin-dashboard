@@ -42,3 +42,53 @@ body {
 .mdi:not(.mdi-view-dashboard) {
   padding-right: 20px;
 }
+.navbar {
+  display: grid;
+  grid-template: 1fr 2fr;
+  padding-left: 50px;
+}
+.top {
+  display: grid;
+  grid-template: 1fr / 3fr 2fr
+}
+.search {
+  display: flex;
+  height: 50px;
+}
+.search > .mdi {
+  padding-top: 2px;
+  font-size: xx-large;
+  text-align: center;
+}
+.top > .profile {
+  display: flex;
+  padding-left: 25%;
+  justify-content: flex-end;
+}
+.icon{
+  font-size: 27px;
+  padding-top: 3px;
+  padding-left: 30px;
+}
+
+.input {
+  width: 100%;
+  height: 80%;
+  background-color: rgb(211, 218, 225);
+  border-radius: 20px;
+}
+
+.profile > .img > img {
+  border-radius: 50%;
+  height: 50px;
+  margin-left: 10px;
+  margin-top:-5px
+}
+
+.profile > .text {
+  font-size: large;
+  font-weight: bold;
+  padding-top: 8.5px;
+  padding-left: 15px;
+  padding-right: 25px;
+}
